@@ -53,7 +53,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     }
     
     @objc func addFloodAnnotationButtonPressed() {
-        
+        if let location = self.locationManager.location {
+            let floodAnnotation = MKPointAnnotation()
+            floodAnnotation.coordinate = location.coordinate
+            self.mapView.addAnnotation(floodAnnotation)
+        }
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
