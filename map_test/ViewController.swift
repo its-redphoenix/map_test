@@ -38,6 +38,21 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     
     private func setupUI() {
         let addFloadButton = UIButton(frame: CGRect.zero)
+        addFloadButton.setImage(UIImage(named: "plus"), for: .normal)
+        addFloadButton.addTarget(self, action: #selector(addFloodAnnotationButtonPressed), for: .touchUpInside)
+        addFloadButton.translatesAutoresizingMaskIntoConstraints = false
+        
+        self.view.addSubview(addFloadButton)
+        addFloadButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+        addFloadButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -40).isActive = true
+        
+        addFloadButton.widthAnchor.constraint(equalToConstant: 75).isActive = true
+        addFloadButton.heightAnchor.constraint(equalToConstant: 75).isActive = true
+        
+        
+    }
+    
+    @objc func addFloodAnnotationButtonPressed() {
         
     }
     
