@@ -1,0 +1,19 @@
+//
+//  ViewController.swift
+//  map_test
+//
+//  Created by Red Phoenix on 03/01/21.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+    }
+
+
+}
+
