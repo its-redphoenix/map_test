@@ -8,5 +8,7 @@ target 'map_test' do
   # Pods for map_test
 # add pods for desired Firebase products
 pod 'Firebase/Core'
+pod 'Firebase/Database'
+
 
 end
